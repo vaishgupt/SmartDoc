@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+  background-color: rgba(255, 192, 203, 0.674);
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Icon - appears on all pages */
+.header-icon {
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Container for all pages */
+.page-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Headings */
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h4 {
+  color: #444;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+h5 {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+h6 {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+/* Images */
+img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+
+/* Buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3d8b40;
+}
+
+/* Button Container - for centering */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="file"] {
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+/* Upload Page Specific */
+label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1rem;
+  border: 2px dashed #4CAF50;
+  border-radius: 8px;
+  margin: 1rem 0;
+  transition: background-color 0.3s;
+}
+
+label:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+/* Answer Display */
+.answer-text {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  border-left: 4px solid #4CAF50;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Status Messages */
+.status-message {
+  color: #666;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+  
+  .page-container {
+    padding: 1rem;
+  }
+  
+  img {
+    max-width: 200px;
+  }
+}
